@@ -1,1 +1,29 @@
-/* Add CSS styling here */
+/* CSS reset*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+    border:1px solid grey;
+
+}
+
+/*general styles*/
+body{
+
+}
+section{
+
+}
+h1, h2, h3{
+
+}
+
+/*header styles*/
+
+header{
+    background-color: #66CDAA;
+}
+h1{
+    color:#778899;
+}
