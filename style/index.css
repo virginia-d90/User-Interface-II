@@ -1,85 +1,133 @@
-/* CSS reset*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    max-width:100%;
-    /*border:1px solid grey;*/
 
+/*Css Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*basic styles*/
+html{
+    font-size: 62.5%;
 }
 
-/*general styles*/
 body{
-background-color: #2F4F4F;
+    background-color:#2F4F4F;
+    /*padding: 20px 80px;*/
+    font-family: 'Roboto Slab', serif;
 }
-section{
-
+a{
+    text-decoration:none;
 }
-h1, h2, h3{
-
+h1{
+   font-size: 50px;
+   margin:3rem; 
 }
-
+h2{
+    font-size: 2rem;
+    margin: 2%;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.5rem;
+}
 
 /*header styles*/
 
 header{
-    background-color: #66CDAA;
-    height:40vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    /*height: 30vh;*/
 }
-h1{
-    color:#778899;
+header nav a{/*not sure what's going on here*/
+color:#A9A9A9;
+margin: 15px;
+padding:15px;
+font-size: 1.2rem;
 }
-nav .links{
-    /*background-color:#2F4F4F;*/
-    padding: 5%;
-    display: flex; 
+header nav a:hover{ 
+color:#D2691E;
+background-color: #778899;
 }
-header nav .links a{
-   padding: 20px;
+header div{/*need help with this***********/
+margin:2%;
 }
-header p{
-    width: 75%;
-}
-
 /*bigImage styles*/
 .bigImage{
-display:flex;
-justify-content: center;
-}
-/*Container styles*/
-
-.container img{
-    width:30%;
-    height:70%;
-}
-.container img{
-    width: 120px;
-    height: 200px;
-}
-.container{
-
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#2F4F4F;
-    
-}
-.container p{i
-    width: 25%;
-    
-}
-
-/*footer styles*/
-footer{
-    background-color: #778899;
-    padding: 2%;
-}
-footer nav a{
-    color:#2F4F4F;
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    width:100%;
+    margin: 1% 0 1% 0;
 }
+/*container styles*/
+.container{
+    display:flex;
+    justify-content: space-around;
+    margin: 1rem;
+
+}
+.container p{
+    /*width:200px;*/
+    /*height:300px;*/
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+/* footer styles*/
+footer{
+    background-color:#A9A9A9;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 5%;
+    line-height: 1.5rem;
+}
+
+/* meta styles for 800px*/
 
