@@ -1,1 +1,85 @@
-/* Add CSS styling here */
+/* CSS reset*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+    /*border:1px solid grey;*/
+
+}
+
+/*general styles*/
+body{
+background-color: #2F4F4F;
+}
+section{
+
+}
+h1, h2, h3{
+
+}
+
+
+/*header styles*/
+
+header{
+    background-color: #66CDAA;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color:#778899;
+}
+nav .links{
+    /*background-color:#2F4F4F;*/
+    padding: 5%;
+    display: flex; 
+}
+header nav .links a{
+   padding: 20px;
+}
+header p{
+    width: 75%;
+}
+
+/*bigImage styles*/
+.bigImage{
+display:flex;
+justify-content: center;
+}
+/*Container styles*/
+
+.container img{
+    width:30%;
+    height:70%;
+}
+.container img{
+    width: 120px;
+    height: 200px;
+}
+.container{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#2F4F4F;
+    
+}
+.container p{i
+    width: 25%;
+    
+}
+
+/*footer styles*/
+footer{
+    background-color: #778899;
+    padding: 2%;
+}
+footer nav a{
+    color:#2F4F4F;
+    display: flex;
+    justify-content: center;
+}
+
