@@ -1,1 +1,233 @@
-/* Add CSS styling here */
+
+/*Css Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*basic styles*/
+html{
+    font-family: 'Roboto Slab', serif;
+    font-size: 62.5%;
+}
+.hidden{
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+body{
+    background-color:#2F4F4F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration:none;
+}
+h1{
+   font-size: 5rem;
+}
+h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.5rem;
+}
+img{
+    width:100%;
+}
+/*header styles*/
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+header nav a{/*not sure what's going on here*/
+color:#A9A9A9;
+margin: 1.5rem;
+padding:1.5rem;
+font-size: 1.4rem;
+}
+header nav a:hover{ 
+color:#D2691E;
+background-color: #778899;
+}
+section{
+    width: 95%;
+    margin: 1rem 0px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*container styles*/
+.container{
+    display:flex;
+    justify-content: space-between;
+
+}
+.container p{
+    /*width:200px;*/
+    /*height:300px;*/
+    display: flex;
+    align-items: center;
+    width: 19%;
+}
+.container img{
+    width: 19%;
+}
+/* footer styles*/
+footer{
+    background-color:#A9A9A9;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    line-height: 1.5rem;
+    width: 100%;
+    height: 20vh;
+}
+.contactContainer a{
+    background-color: #2F4F4F;
+    color:#A9A9A9;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: .25rem;
+}
+.contactContainer a:hover{
+    background-color: #A9A9A9;
+    color:#2F4F4F;
+}
+.social a{
+    background-color: #2F4F4F;
+    color:#A9A9A9;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: .25rem;
+}
+.social a:hover{
+    background-color: #A9A9A9;
+    color:#2F4F4F;
+
+}
+
+/* meta styles for 800px*/
+@media(max-width:800px){
+    h1{
+        font-size:5rem;
+    }
+    header{
+        height:20vh;
+    }
+    header nav a{
+        font-size:1.8rem ;
+    }
+    .intro{
+        line-height: 1.5rem;
+    }
+    .container img{
+        width: 18%;
+    }
+    .container a{
+        padding:1rem;
+        margin:0;
+    }
+    .social a{
+        padding:1rem;
+        margin:0;
+    }
+}
+
+@media(max-width:500px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size:1.75rem;
+        padding: 1rem;
+    }
+    header{
+        height: 10vh;
+    }
+    header nav a{
+        font-size: 1.25rem;
+        /* display:flex; */
+        /* flex-direction:column; */
+        margin:0.2rem .75rem;
+        padding:0;
+    }
+    .intro{
+        line-height: 2.5 rem;
+        text-align: justify;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .container p{
+        width:100%;
+        line-height: 2rem;
+    }
+    .container img{
+        width:45%;
+        margin: .5rem 0;
+    }
+    footer{
+        height: 10vh
+    }
+}
